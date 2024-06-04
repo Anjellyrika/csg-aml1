@@ -2,12 +2,12 @@ This repository contains the code and preliminary results of a study on the robu
 
 One such model is SeqFakeFormer, with the corresponding dataset Seq-Deepfake, as presented in the paper:
 
-**Title**: Detecting and Recovering Sequential DeepFake Manipulation
-**Authors**: Rui Shao, Tianxing Wu, and Ziwei Liu
-**Published in**: [ECCV 2022](https://eccv2022.ecva.net/)
-**Paper Link**: https://arxiv.org/pdf/2207.02204
-**Original Repository**: [SeqDeepFake](https://github.com/rshaojimmy/SeqDeepFake/)
-**Dataset**: [Seq-DeepFake](https://huggingface.co/datasets/rshaojimmy/Seq-DeepFake)
+**Title**: Detecting and Recovering Sequential DeepFake Manipulation  
+**Authors**: Rui Shao, Tianxing Wu, and Ziwei Liu  
+**Published in**: [ECCV 2022](https://eccv2022.ecva.net/)  
+**Paper Link**: https://arxiv.org/pdf/2207.02204  
+**Original Repository**: [SeqDeepFake](https://github.com/rshaojimmy/SeqDeepFake/)  
+**Dataset**: [Seq-DeepFake](https://huggingface.co/datasets/rshaojimmy/Seq-DeepFake)  
 
 Please refer to the original paper for detailed information on the model architecture and dataset preparation.
 
