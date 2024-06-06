@@ -8,8 +8,10 @@ dependencies:
   - _openmp_mutex=5.1=1_gnu
   - blas=1.0=mkl
   - bzip2=1.0.8=h5eee18b_6
+  - c-ares=1.19.1=h5eee18b_0
   - ca-certificates=2024.3.11=h06a4308_0
   - certifi=2021.5.30=py36h06a4308_0
+  - cmake=3.22.1=h1fce559_0
   - colorama=0.4.4=pyhd3eb1b0_0
   - cuda-cudart=12.1.105=0
   - cuda-cupti=12.1.105=0
@@ -19,7 +21,9 @@ dependencies:
   - cuda-opencl=12.4.127=0
   - cuda-runtime=12.1.0=0
   - cudatoolkit=11.3.1=ha36c431_9
+  - curl=8.2.1=h37d81fd_0
   - dataclasses=0.8=pyh4f3eec9_6
+  - expat=2.6.2=h6a678d5_0
   - ffmpeg=4.3=hf484d3e_0
   - freetype=2.12.1=h4a9f257_0
   - giflib=5.2.1=h5eee18b_3
@@ -27,6 +31,7 @@ dependencies:
   - gnutls=3.6.15=he1e5248_0
   - intel-openmp=2022.1.0=h9e868ea_3769
   - jpeg=9e=h5eee18b_1
+  - krb5=1.20.1=h568e23c_1
   - lame=3.100=h7b6447c_0
   - lcms2=2.12=h3be6417_0
   - ld_impl_linux-64=2.38=h1181459_1
@@ -35,18 +40,23 @@ dependencies:
   - libcufft=11.0.2.4=0
   - libcufile=1.9.1.3=0
   - libcurand=10.3.5.147=0
+  - libcurl=8.2.1=h91b91d3_0
   - libcusolver=11.4.4.55=0
   - libcusparse=12.0.2.55=0
   - libdeflate=1.17=h5eee18b_1
+  - libedit=3.1.20230828=h5eee18b_0
+  - libev=4.33=h7f8727e_1
   - libffi=3.3=he6710b0_2
   - libgcc-ng=11.2.0=h1234567_1
   - libgomp=11.2.0=h1234567_1
   - libiconv=1.16=h5eee18b_3
   - libidn2=2.3.4=h5eee18b_0
+  - libnghttp2=1.52.0=ha637b67_1
   - libnpp=12.0.2.50=0
   - libnvjitlink=12.1.105=0
   - libnvjpeg=12.1.1.14=0
   - libpng=1.6.39=h5eee18b_0
+  - libssh2=1.10.0=h37d81fd_2
   - libstdcxx-ng=11.2.0=h1234567_1
   - libtasn1=4.19.0=h5eee18b_0
   - libtiff=4.5.1=h6a678d5_0
@@ -63,8 +73,6 @@ dependencies:
   - nettle=3.7.3=hbbd107a_1
   - ninja=1.10.2=h06a4308_5
   - ninja-base=1.10.2=hd09550d_5
-  - numpy=1.19.2=py36h54aff64_0
-  - numpy-base=1.19.2=py36hfa32c7d_0
   - olefile=0.46=pyhd3eb1b0_0
   - openh264=2.1.1=h4ff587b_0
   - openssl=1.1.1w=h7f8727e_0
@@ -78,6 +86,7 @@ dependencies:
   - pytorch-mutex=1.0=cuda
   - pytz=2021.3=pyhd3eb1b0_0
   - readline=8.2=h5eee18b_0
+  - rhash=1.4.1=h3c74f83_1
   - setuptools=58.0.4=py36h06a4308_0
   - six=1.16.0=pyhd3eb1b0_1
   - sqlite=3.45.3=h5eee18b_0
@@ -93,22 +102,42 @@ dependencies:
   - pip:
       - absl-py==1.4.0
       - cachetools==4.2.4
+      - chardet==4.0.0
       - charset-normalizer==2.0.12
+      - cleverhans==4.0.0
+      - cloudpickle==2.2.1
+      - cycler==0.11.0
+      - decorator==5.1.1
+      - dm-tree==0.1.8
+      - easydict==1.13
+      - gast==0.5.4
       - google-auth==1.35.0
       - google-auth-oauthlib==0.4.6
       - grpcio==1.48.2
-      - idna==3.7
+      - idna==2.10
       - importlib-metadata==4.8.3
+      - importlib-resources==5.4.0
+      - joblib==1.1.1
+      - kiwisolver==1.3.1
       - markdown==3.3.7
+      - matplotlib==3.3.4
+      - mnist==0.2.2
+      - nose==1.3.7
+      - numpy==1.19.5
       - oauthlib==3.2.2
       - protobuf==3.19.6
       - pyasn1==0.5.1
       - pyasn1-modules==0.3.0
-      - requests==2.27.1
+      - pycodestyle==2.10.0
+      - pyparsing==3.1.2
+      - requests==2.25.1
       - requests-oauthlib==2.0.0
       - rsa==4.9
+      - scipy==1.5.4
       - tensorboard==2.4.1
       - tensorboard-plugin-wit==1.8.1
+      - tensorflow-probability==0.19.0
+      - torchattacks==3.5.1
       - urllib3==1.26.18
       - werkzeug==2.0.3
       - zipp==3.6.0
