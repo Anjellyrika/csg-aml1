@@ -1,8 +1,8 @@
 We investigate a transformer model sourced from Hugging Face, *Deepfake vs Real Image Detection*.
 
-**Hugging Face**: [Deepfake vs Real Image Detection](https://huggingface.co/dima806/deepfake_vs_real_image_detection)
-**Kaggle Notebook**: [Deepfake vs real faces detection ViT](https://www.kaggle.com/code/dima806/deepfake-vs-real-faces-detection-vit)
-**Author**: dima806
+**Hugging Face**: [Deepfake vs Real Image Detection](https://huggingface.co/dima806/deepfake_vs_real_image_detection) <br>
+**Kaggle Notebook**: [Deepfake vs real faces detection ViT](https://www.kaggle.com/code/dima806/deepfake-vs-real-faces-detection-vit) <br>
+**Author**: dima806 <br>
 
 Please refer to the original notebook for detailed information on the model architecture and dataset preparation.
 
