@@ -1,0 +1,21 @@
+******************************
+Namespace(cfg='./configs/r50.json', ckpt=None, data_dir='/home/aaraborar/cs199/seqfakeformer/dataset/data', dataset_name='facial_attributes', dist_backend='nccl', dist_url='tcp://10.153.60.46:10003', gpu=0, label_smoothing=0.01, launcher='pytorch', log=True, log_name='pretrained-r50-a', manual_seed=777, ngpus_per_node=8, padding_part=3, rank=0, results_dir='./results', test_type='fixed', world_size=1)
+******************************
+{'lr_backbone': 0.0001, 'lr': 0.001, 'epochs': 170, 'warmup': True, 'warmup_epochs': 20, 'lr_milestones': [70, 120], 'start_epoch': 0, 'weight_decay': 0.0001, 'backbone': 'resnet50', 'dilation': True, 'position_embedding': 'sine', 'Frozen_BatchNorm2d': False, 'batch_size': 32, 'clip_max_norm': 0.1, 'SOS_token_id': 0, 'EOS_token_id': 6, 'PAD_token_id': 7, 'smooth': 4, 'dynamic_scale': 'type3', 'max_position_embeddings': 6, 'vocab_size': 8, 'layer_norm_eps': 1e-12, 'dropout': 0.1, 'hidden_dim': 256, 'enc_layers': 2, 'dec_layers': 2, 'dim_feedforward': 512, 'nheads': 4, 'pre_norm': True, 'imgsize': 256}
+******************************
+test dataset size: 4160
+Loading model from ./results/resnet50/facial_attributes/pretrained-r50-a/snapshots/best_model_fixed.pt...
+best_val_acc: 0.690625...
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 4160/4160 [03:09<00:00, 21.96it/s]
+acc:68.8558%
+
+******************************
+Namespace(cfg='./configs/r50.json', ckpt=None, data_dir='/home/aaraborar/cs199/seqfakeformer/dataset/data', dataset_name='facial_attributes', dist_backend='nccl', dist_url='tcp://10.153.60.46:10003', gpu=0, label_smoothing=0.01, launcher='pytorch', log=True, log_name='pretrained-r50-a', manual_seed=777, ngpus_per_node=8, padding_part=3, rank=0, results_dir='./results', test_type='adaptive', world_size=1)
+******************************
+{'lr_backbone': 0.0001, 'lr': 0.001, 'epochs': 170, 'warmup': True, 'warmup_epochs': 20, 'lr_milestones': [70, 120], 'start_epoch': 0, 'weight_decay': 0.0001, 'backbone': 'resnet50', 'dilation': True, 'position_embedding': 'sine', 'Frozen_BatchNorm2d': False, 'batch_size': 32, 'clip_max_norm': 0.1, 'SOS_token_id': 0, 'EOS_token_id': 6, 'PAD_token_id': 7, 'smooth': 4, 'dynamic_scale': 'type3', 'max_position_embeddings': 6, 'vocab_size': 8, 'layer_norm_eps': 1e-12, 'dropout': 0.1, 'hidden_dim': 256, 'enc_layers': 2, 'dec_layers': 2, 'dim_feedforward': 512, 'nheads': 4, 'pre_norm': True, 'imgsize': 256}
+******************************
+test dataset size: 4160
+Loading model from ./results/resnet50/facial_attributes/pretrained-r50-a/snapshots/best_model_adaptive.pt...
+best_val_acc: 0.49797160243407707...
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 4160/4160 [03:26<00:00, 20.13it/s]
+acc:49.6346%
