@@ -1,4 +1,4 @@
-# Investigating the Effectiveness of Novel Deepfake Detection Transformer Models against Adversarial Attacks
+# Investigating the Robustness of Novel Deepfake Detection Transformer Models against Adversarial Attacks
 A CS199 research project under the [University of the Philippines Computer Security Lab](https://csg.dcs.upd.edu.ph/home).
 
 ## Researchers
