@@ -1,3 +1,5 @@
+# Sourced from https://github.com/rshaojimmy/SeqDeepFake/blob/master/test.py
+
 import os
 from pathlib import Path
 import sys
@@ -68,9 +70,9 @@ def preset_model(args, cfg, model, logger, test_type):
         checkpoint_dir = os.path.join(args.results_dir, cfg.backbone, args.dataset_name, args.log_name, 'snapshots', 'best_model_fixed.pt')
     elif test_type == 'adaptive':
         checkpoint_dir = os.path.join(args.results_dir, cfg.backbone, args.dataset_name, args.log_name, 'snapshots', 'best_model_adaptive.pt')
-        
+
     checkpoint = torch.load(checkpoint_dir, map_location='cpu')
-    
+
     if args.ckpt is not None:
         model.load_state_dict(checkpoint['state_dict'])
         best_val_acc = None
@@ -81,7 +83,7 @@ def preset_model(args, cfg, model, logger, test_type):
         model.load_state_dict(checkpoint['best_state_dict_adaptive'])
         best_val_acc = checkpoint['best_val_acc_adaptive']
     model.cuda(args.gpu)
-    
+
     model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[args.gpu], find_unused_parameters=True)
 
     if args.log:
@@ -114,13 +116,13 @@ def evalute_transformer(cfg, val_dataloader, model, test_type):
 
     with torch.no_grad():
         running_corrects = 0.0
-        epoch_size = 0.0 
+        epoch_size = 0.0
 
         for steps, (image, labels) in enumerate(tqdm(val_dataloader)):
             caption, cap_mask = create_caption_and_mask(cfg)
             image, labels = image.cuda(), labels.long().cuda()
             for i in range(cfg.max_position_embeddings - 1):
-            
+
                 predictions = model(image, caption, cap_mask)
                 predictions = predictions[:, i, :]
                 predicted_id = torch.argmax(predictions, axis=-1)
@@ -133,7 +135,7 @@ def evalute_transformer(cfg, val_dataloader, model, test_type):
 
                 caption[:, i+1] = predicted_id[0]
                 cap_mask[:, i+1] = False
-            
+
             if caption.shape[1] == 6:
                 caption = caption[:, 1:]
 
@@ -158,9 +160,9 @@ def evalute_transformer(cfg, val_dataloader, model, test_type):
 def test(args, cfg, test_dataloader, model, logger):
     test_type = args.test_type
     model  = preset_model(args, cfg, model, logger, test_type)
-    
+
     ACC = evalute_transformer(cfg, test_dataloader, model, test_type)
-    
+
     logger.test_acc(100*ACC)
 
 
@@ -179,7 +181,7 @@ def main_worker(gpu, args, cfg):
     logger = setlogger(log_dir)
 
     logger = logging.getLogger('')
-    
+
     if args.log:
         logger.info('******************************')
         logger.info(args)
@@ -195,11 +197,11 @@ def main_worker(gpu, args, cfg):
         dataset_name=args.dataset_name
     )
 
-        
+
     if args.log:
         print('test dataset size:',len(test_dataset))
     test_dataloader = torch.utils.data.DataLoader(test_dataset, batch_size=1, shuffle=True, num_workers=4)
-    
+
     test(args, cfg, test_dataloader, model, logger)
 
 
