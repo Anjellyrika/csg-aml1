@@ -12,6 +12,9 @@ Please refer to the original paper for detailed information on the model archite
 ## Modifications
 For our use of the model, we used Python packages as specified in the [environment.yml](environment.yml) file.
 
+## Initial Test Results
+Testing the provided pre-trained models yielded results as shown in [pretrained-r50-c-evaluation.txt](pretrained-r50-c-evaluation.txt) for facial components and [pretrained-r50-a-evaluation.txt](pretrained-r50-a-evaluation.txt) for facial attributes. The pre-trained models were able to generate the accuracy scores as reported in the original Seq-DeepFake [benchmark results](https://github.com/rshaojimmy/SeqDeepFake?tab=readme-ov-file#benchmark-results): for facial components, 72.657\% fixed accuracy score and 55.304\% adaptive accuracy score, and for facial attributes, 68.856\% fixed accuracy score and 49.635\% adaptive accuracy score.
+
 ## License
 The original Seq-DeepFake dataset is licensed under Apache 2.0, and can be found [here](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md).
 
