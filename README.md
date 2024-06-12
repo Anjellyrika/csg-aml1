@@ -11,7 +11,7 @@ Angelica Raborar ([@Anjellyrika](https://github.com/Anjellyrika))
 ## About the study
 This repository contains the code and preliminary results of a study on the robustness of novel deepfake detection transformer models against adversarial attacks.
 
-We investigate two models, [SeqFakeFormer](./seqdeepfake/) and [Deepfake vs real faces detection ViT](./huggingface_deepfake_vs_real_image_detection/).
+We investigate two models, [SeqFakeFormer](./seqdeepfake/) by Rui Shao, Tianxing Wu, and Ziwei Liu, and [Deepfake vs real faces detection ViT](./huggingface_deepfake_vs_real_image_detection/) by Dmytro Iakubovskyi.
 
 ### Adversarial Attacks
-<in progress>
+
