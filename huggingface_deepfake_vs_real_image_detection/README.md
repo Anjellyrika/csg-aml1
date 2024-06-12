@@ -9,5 +9,10 @@ Please refer to the original notebook for detailed information on the model arch
 ## Modifications
 For our use of the model, some additional Python packages were installed. See the modified version [here](./HuggingFaceViT%20(Modified).ipynb).
 
+## Initial Test Results
+Testing the model yielded the following results (more details in the [HuggingFaceViT (Modified).ipynb](./HuggingFaceViT%20(Modified).ipynb)).
+
+The precision on predicting the fake image class turned out slightly lower at 99.25\% than what was originally reported at 99.33\%. Overall, the model achieved an accuracy score of 99.23\%, with a very small difference of 0.04\% compared to the documented 99.27\%.
+
 ## License
 The model is licensed under Apache 2.0, and can be found [here](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md).
