@@ -14,4 +14,4 @@ This repository contains the code and preliminary results of a study on the robu
 We investigate two models, [SeqFakeFormer](./seqdeepfake/) by Rui Shao, Tianxing Wu, and Ziwei Liu, and [Deepfake vs real faces detection ViT](./huggingface_deepfake_vs_real_image_detection/) by Dmytro Iakubovskyi.
 
 ### Adversarial Attacks
-
+We apply FGSM on the [deepfake and real images](https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images) dataset, with the parameters `0.05` for epsilon and `2` for the norm. Our implementation is found in [this notebook](./huggingface_deepfake_vs_real_image_detection/transformer-attack.ipynb). Please see the *Generating Adversarial Examples* section of the [README](huggingface_deepfake_vs_real_image_detection/README.md) for more details.
