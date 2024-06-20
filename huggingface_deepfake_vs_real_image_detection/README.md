@@ -7,7 +7,7 @@ We investigate a transformer model sourced from Hugging Face, *Deepfake vs Real 
 Please refer to the original notebook for detailed information on the model architecture and dataset preparation.
 
 ## Modifications
-For our use of the model, some additional Python packages were installed. See the modified version [here](./HuggingFaceViT%20(Modified).ipynb).
+For our use of the model, some additional Python packages were installed. See the modified version [here](./HuggingFaceViT%20(Modified).ipynb), and the list of requirements [here](./requirements.txt).
 
 ## Initial Test Results
 Testing the model yielded the following results (more details in the [HuggingFaceViT (Modified).ipynb](./HuggingFaceViT%20(Modified).ipynb)).
