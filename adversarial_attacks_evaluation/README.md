@@ -15,5 +15,18 @@ Results are as follows:
 |Attack|Accuracy|Correct predictions (out of 190335)|
 |--|--|--|
 |FGM $L_1$|0.99238|188886|
-|FGM $L_2|0.98966|188367|
+|FGM $L_2$|0.98966|188367|
 |FGM $L_\infty$|0.19796|37680|
+
+## Statistical analysis
+A more rigorous experiment was conducted, in which the model was tested on 50 samples of 1000 images from each dataset. The number of prediction errors is then computed for each sample.
+
+See the [analysis notebook](analysis.ipynb) for the implementation.
+
+The number of errors made for each dataset ("baseline" meaning the original dataset) is described below:
+![prediction errors tables](sample_groups_describe.png)
+
+The results are further visualized in the following histogram:
+![prediction errors histogram](error_counts_all_datasets.png)
+
+This visualization shows that the average amount of prediction errors made drastically increases depending on the applied norm of the FGM attack, with the worst performance being on $L_\infty$ with an average of 551 prediction errors out of 1000.
