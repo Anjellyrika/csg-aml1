@@ -1,6 +1,7 @@
 ## Generating Adversarial Examples
-An FGSM attack was applied on the data set [deepfake and real images](https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images), based on the [OpenForensics: Multi-Face Forgery Detection And Segmentation In-The-Wild Dataset](https://zenodo.org/records/5528418#.YpdlS2hBzDd). Parameters used were an epsilon value of 0.05 and a norm of 2.
+We create three data sets of adversarial examples from the [deepfake and real images](https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images) data set, based on the [OpenForensics: Multi-Face Forgery Detection And Segmentation In-The-Wild Dataset](https://zenodo.org/records/5528418#.YpdlS2hBzDd).
 
-See [the notebook](transformer-attack.ipynb) for our implementation of applying FGSM on the dataset and saving the resulting adversarial examples.
+Specifically, we apply the $L_1$, $L_2$, and $L_\infty$ norms of the [fast gradient sign method](https://arxiv.org/abs/1412.6572) with $\epsilon = 0.05$. The implementation of the fast gradient sign method in Python is sourced from v4.0.0 of the [CleverHans](https://github.com/cleverhans-lab/cleverhans/) library.
 
-The implementation for FGSM was imported from the CleverHans library implementation of FGSM found [here](https://github.com/cleverhans-lab/cleverhans/blob/master/cleverhans/torch/attacks/fast_gradient_method.py).
+See the [transformer attack notebook](transformer-attack.ipynb) for our implementation of creating and saving the adversarial examples.
+
