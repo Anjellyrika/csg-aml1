@@ -5,3 +5,5 @@ Specifically, we apply the $L_1$, $L_2$, and $L_\infty$ norms of the [fast gradi
 
 See the [transformer attack notebook](transformer-attack.ipynb) for our implementation of creating and saving the adversarial examples.
 
+An example of set of adversarial images is shown below:
+![original image and adversarial images](./original_and_adversarial_fgsm.PNG)
