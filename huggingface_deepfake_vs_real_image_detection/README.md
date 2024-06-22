@@ -12,8 +12,8 @@ For our use of the model, some additional Python packages were installed. See th
 ## Initial Test Results
 Testing the model yielded the following results (more details in the [HuggingFaceViT (Modified).ipynb](./HuggingFaceViT%20(Modified).ipynb)).
 
-![image](./huggingfacevit-results-confusionmatrix.png)
-![image](./huggingfacevit-results-accuracy.png)
+![results confusion matrix](./huggingfacevit-results-confusionmatrix.png)
+![results accuracy](./huggingfacevit-results-accuracy.png)
 
 The precision on predicting the fake image class turned out slightly lower at 99.25\% than what was originally reported at 99.33\%. Overall, the model achieved an accuracy score of 99.23\%, with a very small difference of 0.04\% compared to the documented 99.27\%.
 
