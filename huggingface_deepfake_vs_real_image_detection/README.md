@@ -17,12 +17,5 @@ Testing the model yielded the following results (more details in the [HuggingFac
 
 The precision on predicting the fake image class turned out slightly lower at 99.25\% than what was originally reported at 99.33\%. Overall, the model achieved an accuracy score of 99.23\%, with a very small difference of 0.04\% compared to the documented 99.27\%.
 
-## Generating Adversarial Examples
-An FGSM attack was applied on the data set [deepfake and real images](https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images), based on the [OpenForensics: Multi-Face Forgery Detection And Segmentation In-The-Wild Dataset](https://zenodo.org/records/5528418#.YpdlS2hBzDd). Parameters used were an epsilon value of 0.05 and a norm of 2.
-
-See [the notebook](transformer-attack.ipynb) for our implementation of applying FGSM on the dataset and saving the resulting adversarial examples.
-
-The implementation for FGSM was imported from the CleverHans library implementation of FGSM found [here](https://github.com/cleverhans-lab/cleverhans/blob/master/cleverhans/torch/attacks/fast_gradient_method.py).
-
 ## License
 The *Deepfake vs Real Image Detection* model is licensed under [Apache 2.0](https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/apache-2.0.md).
